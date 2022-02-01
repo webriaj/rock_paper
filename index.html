@@ -14,6 +14,8 @@
     <header class="bg-info">
         <div class="container py-2">
             <h3 class="text-white text-center"> Welcome! Let's play a game :)</h3>
+            <button class="btn btn-primary" onclick="bgChange()">Change Background</button>
+            <span id="colorCode"></span>
         </div>
     </header>
     <section>
@@ -59,6 +61,69 @@
         </div>
     </section>
 
+    <section id="converter">
+        <div class="container py-5">
+            <div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="currency">
+                            <h2 class="text-center">USD to BDT Convert</h2>
+                            <div class="row">
+                                <div class="col-6 col-md-6">
+                                    <div >
+                                        <input class="p-1" type="number" id="usd" placeholder="$"> <br>
+                                        <button class="btn-info py-1 px-3 border-0 mt-2" onclick="currency();  clr()">Check</button>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-6">
+                                    <div>
+                                        <h4>BDT: <span id="bdt">00.0</span></h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="temperature">
+                            <h2 class="text-center">Farenheit to Celcius  Convert</h2>
+                            <div class="row">
+                                <div class="col-6 col-md-6">
+                                    <div >
+                                        <input class="p-1" type="number" id="Farenheit" placeholder="Farenheit"> <br>
+                                        <button class="btn-info py-1 px-3 border-0 mt-2" onclick="temperature();clr();">Check</button>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-6">
+                                    <div>
+                                        <h4>Celcius: <span id="celcius">00</span> degree </h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div>
+                        <h4>BMI Calculator</h4>
+                        <form action="">
+                            <input type="number" placeholder="Enter Your weight">
+                            <input type="number" placeholder="Height in cm">
+                            <p id="bmi"></p>
+                            <button class="btn-primary">Calculate BMI</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-6"></div>
+            </div>
+        </div>
+    </section>
+   
     <!-- Optional JavaScript; choose one of the two! -->
     <script src="./app.js"></script>
     <!-- Option 1: Bootstrap Bundle with Popper -->
